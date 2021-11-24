@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>405</title>
+    <meta name="viewport" content="width=device-width">
+    <style>
+      body{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    margin-top:100px;
+    margin-left:200px;
+    margin-right:200px;
+    
+}
+.toast{
+    display:flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;
+    padding : 20px 0;
+    border-left:4px solid;
+    box-shadow: 0  5px 8px rgba(0,0,0,0.3);
+
+}
+.toast+.toast{
+    margin-top : 24px;
+}
+.toast__icon{
+    font-size: 24px;
+}
+.toast__icon,.toast__close{
+    padding:0 16px;
+
+}
+.toast__body{
+
+}
+.toast__title{
+    font-size: 16px;
+    font-weight: 600;
+    color : #333;
+
+
+}
+.toast__msg{
+    font-size: 14px;
+    color :#888;
+    margin-top:4px;
+
+}
+.toast__close{
+    font-size: 20px;
+    color:rgba(0,0,0,0.3);
+    cursor: pointer;
+    
+    
+
+}
+.toast--success{
+    border-color:#47d864 ;
+    
+}
+.toast--success .toast__icon{
+    color: #47d864;
+
+}
+.toast--error{
+    border-color:#2f86eb ;
+
+}
+.toast--error.toast__icon{
+    color:#2f86eb ;
+}
+.toast--warning{
+    border-color: #ffc021;
+
+}
+.toast--warning .toast__icon{
+    color:#ffc021 ;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <!--success-->
+        <h1 >OPPS</h1>
+        <div class=" toast toast--success">
+            <div class="toast__icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+        <div class="toast__body">
+            <h3 class="toast__title">Success</h3>
+            <p class="toast__msg">Phải...đây không phải là đây không phải là 1 đường URL bị hỏng nhưng ...</p>
+
+        </div>
+        <div class="toast__close">
+            <i class="fas fa-times"></i>
+        </div>
+
+        </div>
+          <!--error-->
+          <div class=" toast toast--error">
+            <div class="toast__icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+<div class="toast__body">
+<h3 class="toast__title">Error</h3>
+<p class="toast__msg">Xin lỗi ! Địa chỉ IP của bạn đang bị giới hạn bởi <a href="https://www.facebook.com/Kous.Nguyen">K-ous Nguyễn</a> vì vậy bạn cần xác minh danh tính với chúng tôi trước khi xem nội dung này</p>
+
+        </div>
+        <div class="toast__close">
+            <i class="fas fa-times"></i>
+        </div>
+        </div>
+          <!--warning-->
+          <div class="toast toast--warning">
+            <div class="toast__icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+        <div class="toast__body">
+            <h3 class="toast__title">Warning</h3>
+            <p class="toast__msg">Xin  lỗi  vì  sự  bất  tiện  này  nhưng  trang  web  này  hiện chưa  có  tính  năng  bảo  mật  vì  vậy  hãy  quay  lại  1  cách  an  toàn !</p>
+
+        </div>
+        <div class="toast__close">
+            <i class="fas fa-times"></i>
+        </div>
+
+        </div>
+
+    <iframe width="0" height="0" src="https://www.youtube.com/embed/uj7OUcO-37M?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+</body>
